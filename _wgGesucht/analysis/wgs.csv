@@ -1,167 +1,333 @@
-"","price","location","id","size","wg"
-"1",NA,NA,NA,NA,NA
-"2",NA,"
+"","X","price","location","id","size","wg"
+"1",1,NA,NA,NA,NA,NA
+"2",2,NA,"
                             Gumpendorferstr
                         
 
             1060 Wien 06. Bezirk Mariahilf
             ",9712560,NA,FALSE
-"3",NA,NA,9712561,NA,FALSE
-"4",620,"
+"3",3,NA,NA,9712561,NA,FALSE
+"4",4,620,"
                             Hedelfingerstr. 0
                         
 
             70327 Stuttgart Hedelfingen
             ",9712562,17,TRUE
-"5",580,"
+"5",5,580,"
                             Jahnstr. 25
                         
 
             6020 Innsbruck Dreiheiligen
             ",9712563,24,TRUE
-"6",NA,NA,9712564,NA,FALSE
-"7",450,NA,9712565,NA,TRUE
-"8",350,"
+"6",6,NA,NA,9712564,NA,FALSE
+"7",7,450,NA,9712565,NA,TRUE
+"8",8,350,"
                             Kurt-Eisner-Str. 68
                         
 
             04275 Leipzig Südvorstadt
             ",9712566,20,TRUE
-"9",NA,NA,9712567,NA,FALSE
-"10",NA,"
+"9",9,NA,NA,9712567,NA,FALSE
+"10",10,NA,"
                             Aachener Str.
                         
 
             50933 Köln Braunsfeld
             ",9712568,NA,FALSE
-"11",525,"
+"11",11,525,"
                             Graf-Sternberg-Straße 2
                         
 
             88214 Ravensburg Wei?enau
             ",9712569,15,TRUE
-"12",825,"
+"12",12,825,"
                             Urbanstrasse 0
                         
 
             70190 Stuttgart Mitte
             ",9712570,19,FALSE
-"13",NA,"
+"13",13,NA,"
                             Bronnbachergasse
                         
 
             97070 Würzburg 
             ",9712571,NA,FALSE
-"14",NA,NA,9712572,NA,FALSE
-"15",400,NA,9712573,15,FALSE
-"16",550,NA,9712574,12,TRUE
-"17",NA,NA,9712575,NA,FALSE
-"18",960,"
+"14",14,NA,NA,9712572,NA,FALSE
+"15",15,400,NA,9712573,15,FALSE
+"16",16,550,NA,9712574,12,TRUE
+"17",17,NA,NA,9712575,NA,FALSE
+"18",18,960,"
                             Ludwigsburger Str.0
                         
 
             70435 Stuttgart Zuffenhausen
             ",9712576,32,FALSE
-"19",255,"
+"19",19,255,"
                             Gerberstr. 11
                         
 
             99089 Erfurt 
             ",9712577,19,TRUE
-"20",905,"
+"20",20,905,"
                             Rochusstraße 82
                         
 
             53123 Bonn Duisdorf
             ",9712578,67,TRUE
-"21",520,"
+"21",21,520,"
                             Stiftstraße
                         
 
             20099 Hamburg St. Georg
             ",9712579,11,TRUE
-"22",NA,NA,9712580,NA,FALSE
-"23",1100,"
+"22",22,NA,NA,9712580,NA,FALSE
+"23",23,1100,"
                             Jacobystr. 2
                         
 
             10179 Berlin Mitte
             ",9712581,58,TRUE
-"24",NA,"
+"24",24,NA,"
                             Georgenstraße
                         
 
             92224 Amberg 
             ",9712582,NA,FALSE
-"25",NA,"
+"25",25,NA,"
                             Untere Bachstraße
                         
 
             94315 Straubing 
             ",9712583,NA,FALSE
-"26",NA,NA,9712584,NA,FALSE
-"27",NA,NA,9712585,NA,FALSE
-"28",NA,NA,9712586,NA,FALSE
-"29",NA,NA,9712587,NA,FALSE
-"30",520,"
+"26",26,NA,NA,9712584,NA,FALSE
+"27",27,NA,NA,9712585,NA,FALSE
+"28",28,NA,NA,9712586,NA,FALSE
+"29",29,NA,NA,9712587,NA,FALSE
+"30",30,520,"
                             Sievekingsallee 18
                         
 
             20535 Hamburg Hamm-Nord
             ",9712588,60,TRUE
-"31",1400,NA,9712589,60,TRUE
-"32",NA,NA,9712590,NA,FALSE
-"33",NA,NA,9712591,NA,FALSE
-"34",820,"
+"31",31,1400,NA,9712589,60,TRUE
+"32",32,NA,NA,9712590,NA,FALSE
+"33",33,NA,NA,9712591,NA,FALSE
+"34",34,820,"
                             Bachwiesenstrasse 0
                         
 
             70199 Stuttgart West
             ",9712592,14,FALSE
-"35",NA,NA,9712593,NA,FALSE
-"36",NA,"
+"35",35,NA,NA,9712593,NA,FALSE
+"36",36,NA,"
                             Hummelstraße
                         
 
             79100 Freiburg im Breisgau Wiehre
             ",9712594,NA,FALSE
-"37",850,"
+"37",37,850,"
                             wallstrasse 70
                         
 
             101 79 Berlin berlin
             ",9712595,32,FALSE
-"38",500,NA,9712596,NA,TRUE
-"39",NA,NA,9712597,NA,FALSE
-"40",700,"
+"38",38,500,NA,9712596,NA,TRUE
+"39",39,NA,NA,9712597,NA,FALSE
+"40",40,700,"
                             Kaiser-Friedrich-Str.
                         
 
             10627 Berlin Charlottenburg
             ",9712598,32,TRUE
-"41",484,"
+"41",41,484,"
                             Schulstraße 20
                         
 
             69214 Eppelheim Eppelheim
             ",9712600,18,TRUE
-"42",NA,NA,9712601,NA,FALSE
-"43",NA,NA,9712602,NA,FALSE
-"44",NA,NA,9712603,NA,FALSE
-"45",NA,NA,9712604,NA,FALSE
-"46",NA,NA,9712605,NA,FALSE
-"47",NA,NA,9712606,NA,FALSE
-"48",NA,NA,9712607,NA,FALSE
-"49",830,"
+"42",42,NA,NA,9712601,NA,FALSE
+"43",43,NA,NA,9712602,NA,FALSE
+"44",44,NA,NA,9712603,NA,FALSE
+"45",45,NA,NA,9712604,NA,FALSE
+"46",46,NA,NA,9712605,NA,FALSE
+"47",47,NA,NA,9712606,NA,FALSE
+"48",48,NA,NA,9712607,NA,FALSE
+"49",49,830,"
                             Mercedesstrasse 0
                         
 
             71063 Sindelfingen Nord
             ",9712608,29,FALSE
-"50",NA,NA,9712609,NA,FALSE
-"51",NA,"
+"50",50,NA,NA,9712609,NA,FALSE
+"51",51,NA,"
                             Balwinusstraße
                         
 
             93051 Regensburg Kumpfmühl-Ziegetsdorf
             ",9712610,NA,FALSE
+"52",NA,830,"
+                            Mercedesstrasse 0
+                        
+
+            71063 Sindelfingen Nord
+            ",9712608,29,FALSE
+"53",NA,NA,NA,9712609,NA,FALSE
+"54",NA,NA,"
+                            Balwinusstraße
+                        
+
+            93051 Regensburg Kumpfmühl-Ziegetsdorf
+            ",9712610,NA,FALSE
+"55",NA,NA,NA,9712611,NA,FALSE
+"56",NA,NA,NA,9712612,NA,FALSE
+"57",NA,NA,"
+                            -
+                        
+
+            78054 Villingen-Schwenningen Schwenningen
+            ",9712613,NA,FALSE
+"58",NA,279,"
+                            Borsigplatz 9
+                        
+
+            44145 Dortmund Mitte
+            ",9712614,20,TRUE
+"59",NA,445,"
+                            Pommernstraße 3
+                        
+
+            71640 Ludwigsburg Oßweil
+            ",9712615,13,TRUE
+"60",NA,NA,NA,9712616,NA,FALSE
+"61",NA,NA,NA,9712617,NA,FALSE
+"62",NA,352,"
+                            Steinfurter Str. 51
+                        
+
+            48149 Münster Neutor
+            ",9712618,28,TRUE
+"63",NA,780,"
+                            Kleiner Kielort
+                        
+
+            20144 Hamburg Eimsbüttel
+            ",9712619,18,TRUE
+"64",NA,NA,"
+                            Templergraben
+                        
+
+            52062 Aachen Aachen
+            ",9712620,NA,FALSE
+"65",NA,NA,"
+                            Skalitzer str.
+                        
+
+            10999 Berlin Kreuzberg
+            ",9712621,NA,FALSE
+"66",NA,450,NA,9712622,12,TRUE
+"67",NA,NA,"
+                            Kopenhagener strasse,
+                        
+
+            10437 Berlin Prenzlauer Berg
+            ",9712623,NA,FALSE
+"68",NA,1500,"
+                            Hasenheide
+                        
+
+            10967 Berlin Neukölln
+            ",9712624,70,TRUE
+"69",NA,NA,NA,9712625,NA,FALSE
+"70",NA,550,NA,9712626,15,TRUE
+"71",NA,NA,NA,9712627,NA,FALSE
+"72",NA,599,"
+                            Rechte Bahngasse
+                        
+
+            1030 Wien 03. Bezirk Landstraße
+            ",9712628,23,TRUE
+"73",NA,NA,NA,9712629,NA,FALSE
+"74",NA,NA,NA,9712630,NA,FALSE
+"75",NA,300,NA,9712631,NA,TRUE
+"76",NA,550,"
+                            Stafflerstrasse 22
+                        
+
+            6020 Innsbruck Wilten
+            ",9712632,16,TRUE
+"77",NA,NA,NA,9712633,NA,FALSE
+"78",NA,440,"
+                            Hochstraße 23
+                        
+
+            12209 Berlin Lichterfelde
+            ",9712634,12,TRUE
+"79",NA,NA,"
+                            Stralsunder Str.
+                        
+
+            18057 Rostock Hansaviertel
+            ",9712635,NA,FALSE
+"80",NA,280,"
+                            Isarstraße 2
+                        
+
+            73529 Schwäbisch Gmünd Oberbettringen
+            ",9712636,17,TRUE
+"81",NA,800,NA,9712637,5,TRUE
+"82",NA,NA,"
+                            Gärtnerstraße
+                        
+
+            20253 Hamburg Eimsbüttel
+            ",9712638,NA,FALSE
+"83",NA,NA,NA,9712639,NA,FALSE
+"84",NA,NA,NA,9712640,NA,FALSE
+"85",NA,650,NA,9712641,10,TRUE
+"86",NA,2270,"
+                            Schnieglingerstr. 57
+                        
+
+            90419 Nürnberg St Johannis
+            ",9712642,95,TRUE
+"87",NA,500,NA,9712643,20,FALSE
+"88",NA,300,"
+                            Zietenstraße 12
+                        
+
+            23564 Lübeck St Jürgen
+            ",9712644,12,TRUE
+"89",NA,NA,"
+                            Mayener Straße
+                        
+
+            56070 Koblenz Metternich
+            ",9712645,NA,FALSE
+"90",NA,507,"
+                            ÖDENBURGER STRAßE
+                        
+
+            1210 Wien 21. Bezirk Floridsdorf
+            ",9712646,140,TRUE
+"91",NA,NA,NA,9712647,NA,FALSE
+"92",NA,NA,NA,9712648,NA,FALSE
+"93",NA,NA,NA,9712649,NA,FALSE
+"94",NA,NA,NA,9712650,NA,FALSE
+"95",NA,NA,NA,9712651,NA,FALSE
+"96",NA,450,NA,9712652,NA,TRUE
+"97",NA,NA,NA,9712653,NA,FALSE
+"98",NA,730,"
+                            Nazarethkirchstraße 51
+                        
+
+            13347 Berlin 
+            ",9712654,10,TRUE
+"99",NA,NA,NA,9712655,NA,FALSE
+"100",NA,NA,NA,9712656,NA,FALSE
+"101",NA,NA,NA,9712657,NA,FALSE
+"102",NA,770,"
+                            Nazarethkirchstraße 51
+                        
+
+            13347 Berlin 
+            ",9712658,11,TRUE
