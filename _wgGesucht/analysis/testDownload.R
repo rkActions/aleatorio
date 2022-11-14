@@ -8,7 +8,7 @@ library(stringr)
 source("_wgGesucht/analysis/utils.R")
 
 # outfile -----------------------------------------------------------------
-outpath = "_wgGesucht/analysis/output.csv"
+outpath = "_wgGesucht/analysis/wgs.csv"
 
 if(!file.exists(outpath)) {
   print("file does not exist")
