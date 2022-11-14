@@ -53,7 +53,7 @@ jobs:
         git config --local user.email "actions@github.com"
         git add -A
         git commit -am "data $(date)"
-        git push origin master
+        git push origin main
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
         username: github-actions
