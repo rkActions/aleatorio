@@ -1,0 +1,28 @@
+{
+    "id": "DAFB77BE",
+    "path": "~/projects/personal/personal_data/_streets_for_surfboarding/analysis/extract_height_per_street.R",
+    "project_path": "analysis/extract_height_per_street.R",
+    "type": "r_source",
+    "hash": "3866206542",
+    "contents": "",
+    "dirty": false,
+    "created": 1650656591549.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "14,0",
+        "scrollLine": "0",
+        "marks": "<:14,0\n>:14,23"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1650734845,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1650734845500,
+    "read_only": false,
+    "read_only_alternatives": []
+}

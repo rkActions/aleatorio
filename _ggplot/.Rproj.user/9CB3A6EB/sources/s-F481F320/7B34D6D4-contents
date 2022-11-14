@@ -1,0 +1,11 @@
+library(grid)
+library(tidyverse)
+my_circle <- circleGrob(x = 0.5, y = 0.5, r = 0.5,
+                        gp = gpar(col = "gray", lty = 3, fill=radialGradient(colours = c("black", NA))))
+
+
+# For the background of the plot
+circle_gr <- grid.circle(gp = gpar(col = NA, fill = radialGradient(colours = c("#701016", NA))))
+
+circles <- data.frame(x = c(19, 0.25), y = c(9, 5)) %>% 
+  mutate(grob = list(circle_gr))

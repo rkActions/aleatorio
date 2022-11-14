@@ -1,0 +1,8 @@
+cat("welome")
+library(stats)
+library(tidyverse)
+library(glue)
+library(lubridate)
+library(janitor)
+library(here)
+library(rajudas)

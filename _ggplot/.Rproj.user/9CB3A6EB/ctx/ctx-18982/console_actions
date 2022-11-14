@@ -1,0 +1,36 @@
+{
+    "type": [
+        0,
+        1,
+        3,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        3,
+        0,
+        1,
+        2
+    ],
+    "data": [
+        "> ",
+        "devtools::install_github(\"https://github.com/hrbrmstr/ggchicklet\")",
+        "Error: Failed to install 'unknown package' from GitHub:\n  HTTP error 403.\n  API rate limit exceeded for 84.115.229.169. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\n\n  Rate limit remaining: 0/60\n  Rate limit reset at: 2022-05-28 11:39:48 UTC\n\n  To increase your GitHub API rate limit\n  - Use `usethis::create_github_token()` to create a Personal Access Token.\n  - Use `usethis::edit_r_environ()` and add the token as `GITHUB_PAT`.\n",
+        "> ",
+        "gitcreds::gitcreds_set()",
+        "\n\n",
+        "? Enter password or token: ",
+        "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",
+        "-> Adding new credentials...\n-> Removing credetials from cache...\n-> Done.\n",
+        "> ",
+        "devtools::install_github(\"https://github.com/hrbrmstr/ggchicklet\")",
+        "Error: Failed to install 'unknown package' from GitHub:\n  HTTP error 403.\n  API rate limit exceeded for 84.115.229.169. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\n\n  Rate limit remaining: 0/60\n  Rate limit reset at: 2022-05-28 11:39:48 UTC\n\n  To increase your GitHub API rate limit\n  - Use `usethis::create_github_token()` to create a Personal Access Token.\n  - Use `usethis::edit_r_environ()` and add the token as `GITHUB_PAT`.\n",
+        "> ",
+        "usethis::edit_r_environ()",
+        "\u001B[31m•\u001B[39m Modify \u001B[34m'/home/robin/.Renviron'\u001B[39m\n\u001B[31m•\u001B[39m Restart R for changes to take effect\n\nRestarting R session...\n\n"
+    ]
+}
