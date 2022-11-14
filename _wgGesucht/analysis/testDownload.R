@@ -1,6 +1,7 @@
 library(rvest)
 library(glue)
 library(dplyr)
+library(stringr)
 
 
 # source ------------------------------------------------------------------
