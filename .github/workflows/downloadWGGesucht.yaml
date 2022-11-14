@@ -35,9 +35,8 @@ jobs:
     # Set-up R
     - name: Install packages
       run: |
-        R -e 'install.packages("tidyverse")'
+        R -e 'install.packages("dplyr")'
         R -e 'install.packages("rvest")'
-        R -e 'install.packages("glue")'
     # Run R script
     - name: Scrape
       run: Rscript _wgGesucht/analysis/testDownload.R

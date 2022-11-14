@@ -1,6 +1,6 @@
-library(tidyverse)
 library(rvest)
 library(glue)
+library(dplyr)
 
 
 # source ------------------------------------------------------------------
