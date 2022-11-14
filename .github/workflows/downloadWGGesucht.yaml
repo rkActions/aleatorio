@@ -11,6 +11,7 @@ on:
 jobs:
 
   generate-data:
+  
     runs-on: ${{ matrix.config.os }}
 
     name: ${{ matrix.config.os }} (${{ matrix.config.r }})
@@ -26,7 +27,6 @@ jobs:
       RSPM: ${{ matrix.config.rspm }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
-  Scrape:
     # Load repo and install R
     steps:
     - uses: actions/checkout@master
