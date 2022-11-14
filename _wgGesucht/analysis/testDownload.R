@@ -29,7 +29,13 @@ if(!file.exists(outpath)) {
   print("file exists reading...")
 }
 
-print(df)
+
+# define start ------------------------------------------------------------
+startFile = "_wgGesucht/analysis/start.txt"
+startOld = readLines(startFile) %>% as.numeric()
+startNew = startOld + 50
+cat(startNew, file = startFile, append = F)
+
 
 # get the ids -------------------------------------------------------------
 end = start + 50
