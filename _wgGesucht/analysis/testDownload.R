@@ -20,12 +20,10 @@ if(!file.exists(outpath)) {
     wg = NA
   )
   write.csv(df, outpath)
-  start = 9712560
+  start = 9699220
 } else{
   df = read.csv(outpath)
-  start = df %>% filter(
-    if_all(everything(), ~!is.na(.x))
-  ) %>% pull(id) %>% max
+  start = df %>% filter %>% pull(id) %>% max(., na.rm=T)
   print("file exists reading...")
 }
 
@@ -52,7 +50,7 @@ for(i in seq_along(page_ids)){
   size = getSize(html) %>% as.numeric()
   price = getPrice(html) %>% as.numeric()
   location = getLocation(html) %>% as.character()
-  wg = getWG(html)
+  wg = getWG(file)
   print(paste0("WG: ", wg))
 
   row = list(price = price, size = size, location = location, id = id, wg=wg)
@@ -69,7 +67,7 @@ df_final = bind_rows(df, df_new)
 
 
 # write out ---------------------------------------------------------------
-write.csv(df_final, outpath)
+write.csv(df_final, outpath, row.names = F)
 
 
 

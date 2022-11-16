@@ -38,13 +38,10 @@ getLocation = function(html){
 
 
 
-getWG = function(html){
-  size_node = html %>%
-    html_elements("h3.headline-key-facts") %>%
-    html_text()
+getWG = function(file){
 
-  wg = any(str_detect(size_node, "Zimmer"))
-
+  rawHtml = readLines(file)
+  wg = any(str_detect(rawHtml, "WG-Details"))
   return(wg)
 
 
