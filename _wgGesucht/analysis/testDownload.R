@@ -30,13 +30,6 @@ if(!file.exists(outpath)) {
 }
 
 
-# define start ------------------------------------------------------------
-startFile = "_wgGesucht/analysis/start.txt"
-startOld = readLines(startFile) %>% as.numeric()
-startNew = startOld + 50
-cat(startNew, file = startFile, append = F)
-
-
 # get the ids -------------------------------------------------------------
 end = start + 50
 page_ids = start:end
