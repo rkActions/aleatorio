@@ -81,7 +81,7 @@ noNaWg = noNa %>%
   filter(wg == T)
 
 df = data.frame(
-  date = Sys.Date(),
+  date = Sys.time(),
   noNaAndWg = nrow(noNaWg)
 )
 
