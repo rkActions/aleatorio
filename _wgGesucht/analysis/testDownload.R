@@ -71,4 +71,30 @@ df_final = bind_rows(df, df_new)
 write.csv(df_final, outpath, row.names = F)
 
 
+# calculate how many wgsjj:w ----------------------------------------------
+data = read.csv("_wgGesucht/analysis/wgs.csv")
+
+noNa = data %>%
+  filter(!is.na(price))
+
+noNaWg = noNa %>%
+  filter(wg == T)
+
+df = data.frame(
+  date = Sys.Date(),
+  noNaAndWg = nrow(noNaWg)
+)
+
+# output path -------------------------------------------------------------
+outpath = "_wgGesucht/analysis/nwgs.csv"
+outdir = dirname(outpath)
+
+if(!file.exists(outpath)){
+  write.csv(df)
+}else{
+  df_old = read.csv(outpath)
+  df_new = rbind(df, df_old)
+  write.csv(df_new)
+}
+
 
