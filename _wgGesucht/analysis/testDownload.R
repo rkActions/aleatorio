@@ -90,11 +90,11 @@ outpath = "_wgGesucht/analysis/nwgs.csv"
 outdir = dirname(outpath)
 
 if(!file.exists(outpath)){
-  write.csv(df)
+  write.csv(df, outpath, row.names = F)
 }else{
   df_old = read.csv(outpath)
   df_new = rbind(df, df_old)
-  write.csv(df_new)
+  write.csv(df_new, outpath, row.names = F)
 }
 
 
