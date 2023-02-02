@@ -28,6 +28,9 @@ if(!file.exists(outpath)) {
 }
 
 
+# date --------------------------------------------------------------------
+today = Sys.Date()
+
 
 # get the ids -------------------------------------------------------------
 end = start + 50
@@ -54,7 +57,7 @@ for(i in seq_along(page_ids)){
   wg = getWG(file)
   print(paste0("WG: ", wg))
 
-  row = list(price = price, size = size, location = location, id = id, wg=wg)
+  row = list(price = price, size = size, location = location, id = id, wg=wg, date=today)
   rows[[i]] = row
 
 }
