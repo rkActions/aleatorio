@@ -27,6 +27,8 @@ if(!file.exists(outpath)) {
   print("file exists reading...")
 }
 
+df[["date"]] = as.Date(df$date)
+
 
 # date --------------------------------------------------------------------
 today = Sys.Date()
