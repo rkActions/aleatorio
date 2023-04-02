@@ -20,7 +20,6 @@ if(!file.exists(outpath)) {
     wg = NA
   )
   write.csv(df, outpath)
-  start = 9699220
 } else{
   df = read.csv(outpath)
   start = df %>% filter %>% pull(id) %>% max(., na.rm=T)
@@ -35,6 +34,8 @@ today = Sys.Date()
 
 
 # get the ids -------------------------------------------------------------
+  start = 9882712
+
 end = start + 50
 page_ids = start:end
 
