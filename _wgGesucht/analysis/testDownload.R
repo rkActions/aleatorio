@@ -34,8 +34,6 @@ today = Sys.Date()
 
 
 # get the ids -------------------------------------------------------------
-  start = 9882712
-
 end = start + 50
 page_ids = start:end
 
