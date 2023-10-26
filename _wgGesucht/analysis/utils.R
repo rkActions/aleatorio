@@ -1,27 +1,19 @@
 getSize = function(html){
-  size_node = html %>%
-    html_elements("h2.headline-key-facts") %>%
-    html_text() %>%
-    str_subset("m²")
 
-  if (length(size_node) == 0) {
-    return(NA_character_)
-  } else{
-    size = str_extract(size_node, "(\\d*)m") %>% gsub("m", "", .)
-    return(size)
-  }
+  key_fact_values = html %>% html_elements(".key_fact_value") %>%
+    html_text(trim=T)
+
+  size = str_subset(key_fact_values, "m") %>% str_extract("[0-9]*")
+  return(size)
+
 }
 
 getPrice = function(html) {
-  price_node = html %>%
-    html_elements("h2.headline-key-facts")
+  key_fact_values = html %>% html_elements(".key_fact_value") %>%
+    html_text(trim=T)
 
-  if (length(price_node) == 0) {
-    return(NA_character_)
-  } else{
-    price = price_node %>%  html_text() %>% str_subset("€") %>% str_extract("(\\d*)€") %>% gsub("€", "", .)
-    return(price)
-  }
+  price = str_subset(key_fact_values, "€") %>% str_extract("[0-9]*")
+  return(price)
 }
 
 getLocation = function(html){
@@ -31,12 +23,10 @@ getLocation = function(html){
   if(length(location_node) == 0){
     return(NA_character_)
   } else{
-    location = location_node %>% html_text()
+    location = location_node %>% html_text(trim = T) %>% str_replace("\\s{2,}", " ")
     return(location)
   }
 }
-
-
 
 getWG = function(file){
   rawHtml = readLines(file)
