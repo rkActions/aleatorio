@@ -26,6 +26,7 @@ if(!file.exists(outpath)) {
 }
 
 start = findId()
+print(paste0("Start: ", start))
 
 
 
