@@ -43,7 +43,8 @@ findId = function(url="https://www.wg-gesucht.de/wg-zimmer-in-Wien.163.0.1.0.htm
 
  wg_gesucht_links = grepl("^\\/.*[0-9]{7,}", links)
  f = links[wg_gesucht_links][[1]]
- id = as.numeric(gsub("[^0-9]", "", f))
+
+ id = as.numeric(gsub(".*?([0-9]{4,10}).*", "\\1", f, ))
  return(id)
 }
 
