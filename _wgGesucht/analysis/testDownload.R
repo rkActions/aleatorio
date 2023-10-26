@@ -22,9 +22,12 @@ if(!file.exists(outpath)) {
   write.csv(df, outpath)
 } else{
   df = read.csv(outpath)
-  start = df %>% filter %>% pull(id) %>% max(., na.rm=T)
   print("file exists reading...")
 }
+
+start = findId()
+
+
 
 df[["date"]] = as.Date(df$date)
 
