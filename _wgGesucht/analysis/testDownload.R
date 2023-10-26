@@ -25,7 +25,7 @@ if(!file.exists(outpath)) {
   print("file exists reading...")
 }
 
-start = findId()
+end = findId()
 print(paste0("Start: ", start))
 
 
@@ -38,7 +38,7 @@ today = Sys.Date()
 
 
 # get the ids -------------------------------------------------------------
-end = start + 50
+start = end - 50
 page_ids = start:end
 
 rows = vector("list", length=length(page_ids))
