@@ -35,7 +35,7 @@ getWG = function(file){
 }
 
 
-findId = function(url="https://www.wg-gesucht.de/wg-zimmer-in-Wien.163.0.1.0.html?"){
+findId = function(url="https://www.wg-gesucht.de/wg-zimmer-in-Berlin.8.0.1.0.html"){
  raw_html = read_html(url)
  links = raw_html %>% html_elements("h3 > a") %>% lapply(function(x){
    html_attr(x, "href")

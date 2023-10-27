@@ -67,6 +67,9 @@ for(i in seq_along(page_ids)){
 
 }
 
+wgs = vapply(rows, function(x)x[["wg"]] && (length(x[["price"]])!=0), FUN.VALUE=logical(1))
+rows = rows[wgs]
+
 # create dataframe --------------------------------------------------------
 df_new = bind_rows(rows)
 
