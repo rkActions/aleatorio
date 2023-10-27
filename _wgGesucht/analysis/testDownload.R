@@ -38,8 +38,7 @@ today = Sys.Date()
 
 
 # get the ids -------------------------------------------------------------
-start = end - 50
-page_ids = start:end
+page_ids = (end+20):(end-30)
 
 rows = vector("list", length=length(page_ids))
 for(i in seq_along(page_ids)){
