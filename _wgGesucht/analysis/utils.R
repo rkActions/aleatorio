@@ -65,7 +65,7 @@ freiAb = function(html){
   })
 
   if (length(sections_inner) == 0) {
-    return(list(ab = NA, bis = NA))
+    return(list(ab = NA_character_, bis = NA_character_))
   }
 
   section_verf = sections_inner[!is.na(sections_inner)][[1]]
