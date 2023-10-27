@@ -49,4 +49,46 @@ findId = function(url="https://www.wg-gesucht.de/wg-zimmer-in-Berlin.8.0.1.0.htm
 }
 
 
+freiAb = function(html){
+  sections = html %>%
+    html_elements(".col-xs-12.col-sm-6")
+
+  sections_inner = lapply(sections, function(x){
+    t = x %>%
+      html_elements("h3") %>%
+      html_text(trim = T)
+
+    if(length(t) > 0 && t == "Verfügbarkeit"){
+      return(x)
+    }
+    return(NA)
+  })
+
+  if (length(sections_inner) == 0) {
+    return(list(ab = NA, bis = NA))
+  }
+
+  section_verf = sections_inner[!is.na(sections_inner)][[1]]
+
+  section_panel_details = section_verf %>%
+    html_elements(".section_panel_detail") %>%
+    html_text(trim = T) %>%
+    str_replace("\\s{2,}", " ")
+
+  section_panel_values = section_verf %>%
+    html_elements(".section_panel_value") %>%
+    html_text(trim = T) %>%
+    str_replace("\\s{2,}", " ")
+
+  ab_idx = which(str_detect(section_panel_details, "frei ab"))
+  bis_idx = which(str_detect(section_panel_details, "frei bis"))
+
+  ab_val = section_panel_values[ab_idx]
+  bis_val = section_panel_values[bis_idx]
+
+  return(list(ab=ab_val, bis=bis_val))
+
+}
+
+
 

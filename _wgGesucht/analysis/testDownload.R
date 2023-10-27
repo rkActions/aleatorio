@@ -57,12 +57,15 @@ for(i in seq_along(page_ids)){
 
   size = getSize(html) %>% as.numeric()
   price = getPrice(html) %>% as.numeric()
+  ab_bis = freiAb(html)
+  ab = ab_bis$ab
+  bis = ab_bis$bis
 
   location = getLocation(html) %>% as.character()
   wg = getWG(file)
   print(paste0("WG: ", wg))
 
-  row = list(price = price, size = size, location = location, id = id, wg=wg, date=today)
+  row = list(price = price, size = size, location = location, id = id, wg=wg, date=today, ab=ab, bis=bis)
   rows[[i]] = row
 
 }
