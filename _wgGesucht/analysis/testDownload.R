@@ -2,6 +2,7 @@ library(rvest)
 library(glue)
 library(dplyr)
 library(stringr)
+library(tidygeocoder)
 
 
 # source ------------------------------------------------------------------
@@ -26,8 +27,6 @@ if(!file.exists(outpath)) {
 }
 
 end = findId()
-print(paste0("Start: ", end))
-
 
 
 df[["date"]] = as.Date(df$date)
@@ -73,8 +72,13 @@ for(i in seq_along(page_ids)){
 df_new = bind_rows(rows)
 
 
+# geocode -----------------------------------------------------------------
+df_new_geo = df_new %>%
+  geocode(location)
+
+
 # bind them together ------------------------------------------------------
-df_final = bind_rows(df, df_new)
+df_final = bind_rows(df, df_new_geo)
 
 
 # write out ---------------------------------------------------------------
