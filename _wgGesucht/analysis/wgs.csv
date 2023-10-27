@@ -1,8 +1,12 @@
-"price","location","id","size","wg","date","lat","long"
-1150,"Winterstraße 13409 Berlin",9764465,22,TRUE,2023-10-27,52.5695459,13.376607
-580,"6 Am Alten Forsthaus 44225 Dortmund Buchholz",10600292,40,FALSE,2023-10-27,NA,NA
-750,"Rendsburger Straße 20359 Hamburg St. Pauli",10600276,15,TRUE,2023-10-27,53.5522444,9.9644473
-650,"Burgherrenstraße 12101 Berlin Tempelhof",10600271,16,TRUE,2023-10-27,52.4848025,13.3835086
-670,"St.-Cajetan-Straße 81669 München Au-Haidhausen",10600259,10,TRUE,2023-10-27,NA,NA
-125,"Elberfelder Str. 6 10555 Berlin Moabit",10600253,42,FALSE,2023-10-27,52.5236527,13.3358679006043
-410,"Geschwister Scholl Str. 47 37081 Göttingen Weststadt",10600246,14,TRUE,2023-10-27,51.5387103,9.9130992
+"price","location","id","size","wg","date","lat","long","ab","bis"
+1150,"Winterstraße 13409 Berlin",9764465,22,TRUE,2023-10-27,52.5695459,13.376607,NA,NA
+580,"6 Am Alten Forsthaus 44225 Dortmund Buchholz",10600292,40,FALSE,2023-10-27,NA,NA,NA,NA
+750,"Rendsburger Straße 20359 Hamburg St. Pauli",10600276,15,TRUE,2023-10-27,53.5522444,9.9644473,NA,NA
+650,"Burgherrenstraße 12101 Berlin Tempelhof",10600271,16,TRUE,2023-10-27,52.4848025,13.3835086,NA,NA
+670,"St.-Cajetan-Straße 81669 München Au-Haidhausen",10600259,10,TRUE,2023-10-27,NA,NA,NA,NA
+125,"Elberfelder Str. 6 10555 Berlin Moabit",10600253,42,FALSE,2023-10-27,52.5236527,13.3358679006043,NA,NA
+410,"Geschwister Scholl Str. 47 37081 Göttingen Weststadt",10600246,14,TRUE,2023-10-27,51.5387103,9.9130992,NA,NA
+1300,"Morassistr 80469 München Ludwigsvorstadt-Isarvorstadt",10604457,55,FALSE,2023-10-27,48.132402,11.5827923,"01.11.2023","30.11.2023"
+1000,"Straßmannstraße 30 10249 Berlin Friedrichshain-Kreuzberg",10604433,30,TRUE,2023-10-27,52.5225536,13.4518236,"14.11.2023","03.01.2024"
+400,"Martinstr.12 73728 Esslingen am Neckar Innenstadt",10604428,28,TRUE,2023-10-27,48.74045675,9.30291795,"01.01.2024","30.09.2024"
+1550,"Invalidenstraße 104 10115 Berlin Mitte",10604416,76,FALSE,2023-10-27,52.5299313,13.3811285,"01.01.2024","16.02.2024"
