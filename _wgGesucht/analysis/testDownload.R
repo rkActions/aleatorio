@@ -29,8 +29,6 @@ if(!file.exists(outpath)) {
 end = findId()
 
 
-df[["date"]] = as.Date(df$date)
-
 
 # date --------------------------------------------------------------------
 today = Sys.Date()
@@ -86,7 +84,7 @@ write.csv(df_final, outpath, row.names = F)
 
 
 # calculate how many wgsjj:w ----------------------------------------------
-data = read.csv("_wgGesucht/analysis/wgs.csv")
+data = read.csv(outpath)
 
 noNa = data %>%
   filter(!is.na(price))
@@ -100,15 +98,15 @@ df = data.frame(
 )
 
 # output path -------------------------------------------------------------
-outpath = "_wgGesucht/analysis/nwgs.csv"
-outdir = dirname(outpath)
+outpath_n = "_wgGesucht/analysis/nwgs.csv"
+outdir = dirname(outpath_n)
 
-if(!file.exists(outpath)){
-  write.csv(df, outpath, row.names = F)
+if(!file.exists(outpath_n)){
+  write.csv(df, outpath_n, row.names = F)
 }else{
-  df_old = read.csv(outpath)
+  df_old = read.csv(outpath_n)
   df_new = rbind(df, df_old)
-  write.csv(df_new, outpath, row.names = F)
+  write.csv(df_new, outpath_n, row.names = F)
 }
 
 
