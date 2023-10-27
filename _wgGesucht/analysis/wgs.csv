@@ -1,3 +1,8 @@
 "price","location","id","size","wg","date","lat","long"
-NA,NA,NA,NA,NA,NA,NA,NA
 1150,"Winterstraße 13409 Berlin",9764465,22,TRUE,2023-10-27,52.5695459,13.376607
+580,"6 Am Alten Forsthaus 44225 Dortmund Buchholz",10600292,40,FALSE,2023-10-27,NA,NA
+750,"Rendsburger Straße 20359 Hamburg St. Pauli",10600276,15,TRUE,2023-10-27,53.5522444,9.9644473
+650,"Burgherrenstraße 12101 Berlin Tempelhof",10600271,16,TRUE,2023-10-27,52.4848025,13.3835086
+670,"St.-Cajetan-Straße 81669 München Au-Haidhausen",10600259,10,TRUE,2023-10-27,NA,NA
+125,"Elberfelder Str. 6 10555 Berlin Moabit",10600253,42,FALSE,2023-10-27,52.5236527,13.3358679006043
+410,"Geschwister Scholl Str. 47 37081 Göttingen Weststadt",10600246,14,TRUE,2023-10-27,51.5387103,9.9130992

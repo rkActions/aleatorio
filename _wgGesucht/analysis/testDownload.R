@@ -26,7 +26,10 @@ if(!file.exists(outpath)) {
   print("file exists reading...")
 }
 
+# find the end id
 end = findId()
+
+df[["date"]] = as.Date(df[["date"]])
 
 
 
@@ -54,6 +57,7 @@ for(i in seq_along(page_ids)){
 
   size = getSize(html) %>% as.numeric()
   price = getPrice(html) %>% as.numeric()
+
   location = getLocation(html) %>% as.character()
   wg = getWG(file)
   print(paste0("WG: ", wg))
