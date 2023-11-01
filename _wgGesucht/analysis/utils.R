@@ -120,7 +120,7 @@ getUrls = function(){
   }) %>% unlist
 
   # select 10 random links
-  sample_locations = sample(links_locations_2, 3)
+  sample_locations = sample(links_locations_2, 1)
 
   # read the html from these locations
   links = lapply(sample_locations, function(u){
@@ -134,8 +134,8 @@ getUrls = function(){
     return(links)
   }) %>% unlist
 
-  if(length(links) > 60){
-    links = links[1:60]
+  if(length(links) > 50){
+    links = links[1:50]
   }
 
 
