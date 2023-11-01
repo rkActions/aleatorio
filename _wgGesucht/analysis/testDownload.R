@@ -72,7 +72,7 @@ for(i in seq_along(urls)){
   wg = getWG(file)
   print(paste0("WG: ", wg))
 
-  row = list(price = price, size = size, location = location, id = id, wg=wg, date=today, ab=ab, bis=bis)
+  row = list(price = price, size = size, location = location, id = url, wg=wg, date=today, ab=ab, bis=bis)
   rows[[i]] = row
 
 }

@@ -109,7 +109,7 @@ getUrls = function(){
   }) %>% unlist
 
   # select 10 random links
-  sample_locations = sample(links_locations_2, 5)
+  sample_locations = sample(links_locations_2, 3)
 
   # read the html from these locations
   links = lapply(sample_locations, function(u){
