@@ -58,6 +58,7 @@ for(i in seq_along(urls)){
   file = paste0(tempfile(), ".html")
 
   # download
+  tryCatch({
   download.file(url, file)
 
   # read
@@ -75,6 +76,10 @@ for(i in seq_along(urls)){
 
   row = list(price = price, size = size, location = location, id = url, wg=wg, date=today, ab=ab, bis=bis)
   rows[[i]] = row
+
+  }, error = function(cond){
+    next
+  })
 
 }
 
