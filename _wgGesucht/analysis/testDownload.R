@@ -26,8 +26,14 @@ if(!file.exists(outpath)) {
   print("file exists reading...")
 }
 
+
+
+# get the urls ------------------------------------------------------------
+urls = getUrls()
+
+
 # find the end id
-end = findId()
+# end = findId()
 
 df[["date"]] = as.Date(df[["date"]])
 
@@ -38,15 +44,16 @@ today = Sys.Date()
 
 
 # get the ids -------------------------------------------------------------
-page_ids = (end+50):(end-50)
+# page_ids = (end+50):(end-50)
 
-rows = vector("list", length=length(page_ids))
-for(i in seq_along(page_ids)){
+rows = vector("list", length=length(urls))
+for(i in seq_along(urls)){
 
   print(i)
 
-  id = page_ids[[i]]
-  url = paste0("https://www.wg-gesucht.de/", id, ".html" )
+  # id = page_ids[[i]]
+  # url = paste0("https://www.wg-gesucht.de/", id, ".html" )
+  url = urls[[i]]
   file = paste0(tempfile(), ".html")
 
   # download

@@ -90,5 +90,47 @@ freiAb = function(html){
 
 }
 
+getUrls = function(){
+
+  url_all_cities = "https://www.wg-gesucht.de/wohngemeinschaft.html"
+  html_all_cities = read_html(url_all_cities)
+
+  # get all the urls to the shared flats
+  a_tags = html_all_cities %>% html_elements("a")
+  a_tags_share_flats = a_tags[str_detect(tolower(html_text(a_tags, trim = T)), "share")]
+  links_locations_1 = html_attr(a_tags_share_flats, "href")
+
+  links_locations_2 = map(links_locations_1, function(l){
+    if(str_detect(l, "1-zimmer")){
+      l = str_replace(l, "1-zimmer-wohnungen", "wg-zimmer")
+      l = str_replace(l, "\\.1\\.1\\.0", ".0.1.0")
+    }
+    return(l)
+  }) %>% unlist
+
+  # select 10 random links
+  sample_locations = sample(links_locations_2, 5)
+
+  # read the html from these locations
+  links = map(sample_locations, function(u){
+    base = "https://www.wg-gesucht.de/"
+    url = glue("{base}{u}")
+    raw_html = read_html(url)
+    links = raw_html %>% html_elements("h3 > a") %>% lapply(function(x) {
+      href=html_attr(x, "href")
+      link=glue("{base}{href}")
+    }) %>% unlist
+    return(links)
+  }) %>% unlist
+
+  if(length(links) > 60){
+    links = links[1:60]
+  }
+
+
+  return(links)
+
+}
+
 
 
