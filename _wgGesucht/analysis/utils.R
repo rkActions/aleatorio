@@ -119,11 +119,17 @@ getUrls = function(){
     return(l)
   }) %>% unlist
 
+  main = c(links_locations[1:24], str_subset(links_locations_2, "Wien"))
+  rest = links_locations_2[25:length(links_locations_2)]
+
   # select 10 random links
-  sample_locations = sample(links_locations_2, 1)
+  samples_main = sample(main, 3)
+  samples_rest = sample(rest, 1)
+
+  sample = c(samples_main, samples_rest)
 
   # read the html from these locations
-  links = lapply(sample_locations, function(u){
+  links = lapply(sample, function(u){
     base = "https://www.wg-gesucht.de/"
     url = glue("{base}{u}")
     raw_html = read_html(url)
