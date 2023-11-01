@@ -48,8 +48,7 @@ today = Sys.Date()
 # page_ids = (end+50):(end-50)
 
 rows = vector("list", length=length(urls))
-for(i in seq_along(urls)){
-
+for(i in seq_along(urls)) {
   print(i)
 
   # id = page_ids[[i]]
@@ -58,27 +57,37 @@ for(i in seq_along(urls)){
   file = paste0(tempfile(), ".html")
 
   # download
-  tryCatch({
-  download.file(url, file)
+  success = tryCatch({
+    download.file(url, file)
 
-  # read
-  html = rvest::read_html(file)
+    # read
+    html = rvest::read_html(file)
 
-  size = getSize(html) %>% as.numeric()
-  price = getPrice(html) %>% as.numeric()
-  ab_bis = freiAb(html)
-  ab = ab_bis$ab
-  bis = ab_bis$bis
+    size = getSize(html) %>% as.numeric()
+    price = getPrice(html) %>% as.numeric()
+    ab_bis = freiAb(html)
+    ab = ab_bis$ab
+    bis = ab_bis$bis
 
-  location = getLocation(html) %>% as.character()
-  wg = getWG(file)
-  print(paste0("WG: ", wg))
+    location = getLocation(html) %>% as.character()
+    wg = getWG(file)
+    print(paste0("WG: ", wg))
 
-  row = list(price = price, size = size, location = location, id = url, wg=wg, date=today, ab=ab, bis=bis)
-  rows[[i]] = row
+    row = list(
+      price = price,
+      size = size,
+      location = location,
+      id = url,
+      wg = wg,
+      date = today,
+      ab = ab,
+      bis = bis
+    )
+    rows[[i]] = row
+    return(TRUE)
 
-  }, error = function(cond){
-    next
+  }, error = function(cond) {
+    return(FALSE)
   })
 
 }
@@ -112,21 +121,17 @@ noNa = data %>%
 noNaWg = noNa %>%
   filter(wg == T)
 
-df = data.frame(
-  date = Sys.time(),
-  noNaAndWg = nrow(noNaWg)
-)
+df = data.frame(date = Sys.time(),
+                noNaAndWg = nrow(noNaWg))
 
 # output path -------------------------------------------------------------
 outpath_n = "_wgGesucht/analysis/nwgs.csv"
 outdir = dirname(outpath_n)
 
-if(!file.exists(outpath_n)){
+if (!file.exists(outpath_n)) {
   write.csv(df, outpath_n, row.names = F)
-}else{
+} else{
   df_old = read.csv(outpath_n)
   df_new = rbind(df, df_old)
   write.csv(df_new, outpath_n, row.names = F)
 }
-
-
