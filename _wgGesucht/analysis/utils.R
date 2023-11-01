@@ -119,7 +119,7 @@ getUrls = function(){
     return(l)
   }) %>% unlist
 
-  main = c(links_locations[1:24], str_subset(links_locations_2, "Wien"))
+  main = c(links_locations_2[1:24], str_subset(links_locations_2, "Wien"))
   rest = links_locations_2[25:length(links_locations_2)]
 
   # select 10 random links
