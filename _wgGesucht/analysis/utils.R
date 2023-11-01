@@ -100,7 +100,7 @@ getUrls = function(){
   a_tags_share_flats = a_tags[str_detect(tolower(html_text(a_tags, trim = T)), "share")]
   links_locations_1 = html_attr(a_tags_share_flats, "href")
 
-  links_locations_2 = map(links_locations_1, function(l){
+  links_locations_2 = lapply(links_locations_1, function(l){
     if(str_detect(l, "1-zimmer")){
       l = str_replace(l, "1-zimmer-wohnungen", "wg-zimmer")
       l = str_replace(l, "\\.1\\.1\\.0", ".0.1.0")
@@ -112,7 +112,7 @@ getUrls = function(){
   sample_locations = sample(links_locations_2, 5)
 
   # read the html from these locations
-  links = map(sample_locations, function(u){
+  links = lapply(sample_locations, function(u){
     base = "https://www.wg-gesucht.de/"
     url = glue("{base}{u}")
     raw_html = read_html(url)
