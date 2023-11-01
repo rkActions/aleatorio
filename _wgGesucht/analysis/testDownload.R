@@ -36,6 +36,7 @@ urls = getUrls()
 # end = findId()
 
 df[["date"]] = as.Date(df[["date"]])
+df[["id"]] = as.character(df[["id"]])
 
 
 
