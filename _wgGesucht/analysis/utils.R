@@ -68,7 +68,18 @@ freiAb = function(html){
     return(list(ab = NA_character_, bis = NA_character_))
   }
 
-  section_verf = sections_inner[!is.na(sections_inner)][[1]]
+  section_verf = tryCatch({
+    section_verf = sections_inner[!is.na(sections_inner)][[1]]
+  }, error = function(cond) {
+    return(NA)
+  })
+
+  if(is.na(section_verf)){
+    return(list(ab = NA_character_, bis = NA_character_))
+  }
+
+
+
 
   section_panel_details = section_verf %>%
     html_elements(".section_panel_detail") %>%
